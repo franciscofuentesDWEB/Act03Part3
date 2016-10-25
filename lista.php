@@ -2,7 +2,7 @@
 /*====================================================================+
 || # Formulario PHP - Desarrollo Web 2016 - Universidad de Valparaíso
 |+====================================================================+
-|| # Copyright © 2016 Miguel González Aravena. All rights reserved.
+|| # Copyright © 2016 Francisco Fuentes Schreiber. All rights reserved.
 || # https://github.com/MiguelGonzalezAravena/FormularioPHP
 |+====================================================================*/
 
@@ -13,17 +13,16 @@ function Filtro($texto) {
 
 // Variables
 $directorio = 'C:/wamp/www/FormularioPHP/assets/';
-$extension = explode('.', $_FILES['foto']['name']);
-$nombre_foto = time() . '.' . $extension[1];
-$foto_subida = $directorio . basename($nombre_foto);
 $enviado = isset($_POST['enviado']) ? (int) $_POST['enviado'] : 0;
 $contenido = isset($_POST['contenido']) ? (int) $_POST['contenido'] : 0;
 $nombre = isset($_POST['nombre']) ? Filtro($_POST['nombre']) : '';
 $correo = isset($_POST['correo']) ? Filtro($_POST['correo']) : '';
+$consejal = isset($_POST['consejal']) ? Filtro($_POST['consejal']) : '';
+$alcalde = isset($_POST['alcalde']) ? Filtro($_POST['alcalde']) : '';
 $sexo = isset($_POST['sexo']) ? Filtro($_POST['sexo']) : '';
 $direccion = isset($_POST['direccion']) ? Filtro($_POST['direccion']) : '';
 $comuna = isset($_POST['comuna']) ? Filtro($_POST['comuna']) : '';
-$foto = isset($_FILES['foto']) ? $_FILES['foto'] : '';
+$vocal = isset($_POST['vocal']) ? Filtro($_POST['vocal']) : '';
 $error = '';
 //$anio = isset($_POST['anio']) ? (int) $_POST['anio'] : 0;
 //$terminos = isset($_POST['terminos']) ? (int) $_POST['terminos'] : 0;
