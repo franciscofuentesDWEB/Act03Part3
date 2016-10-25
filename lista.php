@@ -95,7 +95,7 @@ if(!empty($error)) {
     </div>
     <div class="panel-body">
       <p>Bienvenido(a) <b><?php echo $nombre; ?></b>,</p>
-      <p>Tu correo electrónico es <b><?php echo $correo; ?></b>,<p>tu rut es <b><?php echo $rut; ?></b>, y tu contraseña tiene <b><?php echo strlen($contrasena); ?></b> caracteres.</p>
+      <p>Tu correo electrónico es <b><?php echo $correo; ?></b>,<p>tu direccion es <b><?php echo $direccion; ?></b>, alcalde escojido <b><?php echo $alcalde; ?></b>.</p>
       <p>
         Tu foto de perfil es: <br />
         <img src="./assets/<?php echo $nombre_foto; ?>" class="thumbnail">
@@ -139,7 +139,7 @@ if(!empty($error)) {
   <footer>
     <div class="text-center">
       <i class="glyphicon glyphicon-leaf"></i>
-      Desarrollado por <a href="https://github.com/MiguelGonzalezAravena" target="_blank">Miguel González Aravena</a>
+      Desarrollado por <a href="https://github.com/franciscofuentesDWEB" target="_blank">Francisco Fuentes Schreiber</a>
     </div>
   </footer>
 </div>
