@@ -18,19 +18,19 @@ $nombre_foto = time() . '.' . $extension[1];
 $foto_subida = $directorio . basename($nombre_foto);
 $enviado = isset($_POST['enviado']) ? (int) $_POST['enviado'] : 0;
 $contenido = isset($_POST['contenido']) ? (int) $_POST['contenido'] : 0;
-$anio = isset($_POST['anio']) ? (int) $_POST['anio'] : 0;
-$terminos = isset($_POST['terminos']) ? (int) $_POST['terminos'] : 0;
-$basura = isset($_POST['basura']) ? (int) $_POST['basura'] : 0;
 $nombre = isset($_POST['nombre']) ? Filtro($_POST['nombre']) : '';
-$rut = isset($_POST['rut']) ? (char) Filtro($_POST['rut']) : '';
 $correo = isset($_POST['correo']) ? Filtro($_POST['correo']) : '';
-$contrasena = isset($_POST['contrasena']) ? Filtro($_POST['contrasena']) : '';
-$foto = isset($_FILES['foto']) ? $_FILES['foto'] : '';
-$descripcion = isset($_POST['descripcion']) ? Filtro($_POST['descripcion']) : '';
 $sexo = isset($_POST['sexo']) ? Filtro($_POST['sexo']) : '';
 $direccion = isset($_POST['direccion']) ? Filtro($_POST['direccion']) : '';
 $comuna = isset($_POST['comuna']) ? Filtro($_POST['comuna']) : '';
+$foto = isset($_FILES['foto']) ? $_FILES['foto'] : '';
 $error = '';
+//$anio = isset($_POST['anio']) ? (int) $_POST['anio'] : 0;
+//$terminos = isset($_POST['terminos']) ? (int) $_POST['terminos'] : 0;
+//$basura = isset($_POST['basura']) ? (int) $_POST['basura'] : 0;
+//$rut = isset($_POST['rut']) ? (char) Filtro($_POST['rut']) : '';
+//$contrasena = isset($_POST['contrasena']) ? Filtro($_POST['contrasena']) : '';
+//$descripcion = isset($_POST['descripcion']) ? Filtro($_POST['descripcion']) : '';
 ?>
 <!DOCTYPE html>
 <html>
