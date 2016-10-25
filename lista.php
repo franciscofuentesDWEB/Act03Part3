@@ -55,26 +55,20 @@ if($enviado == 1 && $contenido == 1) {
   exit;
 } else if(empty($nombre)) {
   $error = 'Por favor, ingrese su nombre.';
-} else if(empty($rut)){
-  $error = 'Por favor, ingrese su rut';
 } else if(empty($correo)) {
   $error = 'Por favor, ingrese su correo electrónico.';
-} else if(empty($contrasena)) {
-  $error = 'Por favor, ingrese su contraseña.';
-} else if(empty($foto)) {
-  $error = 'Por favor, seleccione su foto de perfil.';
-} else if(empty($descripcion)) {
-  $error = 'Por favor, ingrese su descripción.';
-} else if(empty($anio)) {
-  $error = 'Por favor, seleccione su año de ingreso.';
 } else if(empty($sexo)) {
   $error = 'Por favor, ingrese su sexo.';
-} else if(empty($terminos)) {
-  $error = 'Debe aceptar los términos y condiciones para poder seguir.';
 } else if(empty($direccion)) {
   $error = 'Por favor, ingrese su dirreción.';
 } else if(empty($comuna)) {
   $error = 'Por favor, ingrese su comuna.';
+} else if(empty($vocal)) {
+  $error = 'Por favor, ingrese su nombre.';
+} else if(empty($alcalde)) {
+  $error = 'Por favor, ingrese su nombre.';
+} else if(empty($consejal)) {
+  $error = 'Por favor, ingrese su nombre.';
 }
 
 // Vista de error
@@ -129,9 +123,6 @@ if(!empty($error)) {
       </p>
       <p>
         Tu <b><?php echo ($terminos == 1 ? 'sí' : 'no'); ?></b> aceptaste los términos y condiciones.</b>
-      </p>
-       <p>
-        Tu <b><?php echo ($terminos == 1 ? 'sí' : 'no'); ?></b> aceptaste recibir correos basura de esta empresa.</b>
       </p>
     </div>
     <div class="panel-footer">
