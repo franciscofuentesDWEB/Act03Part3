@@ -82,12 +82,7 @@ if(!empty($error)) {
   <i class="glyphicon glyphicon-chevron-left"></i>
   Volver
 </a>
-<?php
-// Vista de éxito
-} else {
-  // Subir imagen
-  move_uploaded_file($foto['tmp_name'], $foto_subida);
-?>
+<?php?>
   <h3>¡Formulario enviado satisfactoriamente!</h3>
   <div class="panel panel-default">
     <div class="panel-heading">
