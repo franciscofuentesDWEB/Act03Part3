@@ -92,10 +92,6 @@ if(!empty($error)) {
       <p>Bienvenido(a) <b><?php echo $nombre; ?></b>,</p>
       <p>Tu correo electrónico es <b><?php echo $correo; ?></b>,<p>tu direccion es <b><?php echo $direccion; ?></b>, alcalde escojido <b><?php echo $alcalde; ?></b><p>consejal escojido <b><?php echo $consejal; ?>.</p>
       <p>
-        Tu foto de perfil es: <br />
-        <img src="./assets/<?php echo $nombre_foto; ?>" class="thumbnail">
-      </p>
-      <p>
         Tu descripción es: <br />
         <blockquote>
           <?php echo $descripcion; ?>
