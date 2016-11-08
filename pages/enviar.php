@@ -98,7 +98,7 @@ if(!empty($error)) {
         Tu concejal es es: <b><?php echo $concejal; ?></b>
       </p>
       <p>
-        Tu sexo es: <b><?php echo ($sexo == 'm' ? 'Masculino' : 'Femenino'); ?></b>
+        Tu sexo es: <b><?php echo ($sexo == 'option1' ? 'Masculino' : 'Femenino'); ?></b>
       </p>
     </div>
     <div class="panel-footer">
