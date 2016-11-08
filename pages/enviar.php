@@ -101,7 +101,7 @@ if(!empty($error)) {
         Tu sexo es: <b><?php if($sexo == 'option1'){
                                 echo "Femenino";
                              } elseif ($sexo == 'option2'){
-                                echo "Masculino;"
+                                echo "Masculino";
                              } else {
                                 echo "Helicoptero Apache";
                              } ?></b>
