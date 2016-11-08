@@ -10,7 +10,7 @@ function Filtro($texto) {
   return htmlspecialchars(trim($texto), ENT_QUOTES);
 }
 // Variables
-$directorio = 'C:/wamp/www/Formulario2/assets/';
+$directorio = '/Applications/XAMPP/htdocs/FE3';
 $enviado = isset($_POST['enviado']) ? (int) $_POST['enviado'] : 0;
 $anio = isset($_POST['anio']) ? (int) $_POST['anio'] : 0;
 $alcalde = isset($_POST['alcalde']) ? Filtro($_POST['alcalde']) : '';
