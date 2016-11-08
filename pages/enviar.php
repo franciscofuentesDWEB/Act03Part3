@@ -17,6 +17,8 @@ $alcalde = isset($_POST['alcalde']) ? Filtro($_POST['alcalde']) : '';
 $concejal= isset($_POST['concejal']) ? Filtro($_POST['concejal']) : '';
 $nombre = isset($_POST['nombre']) ? Filtro($_POST['nombre']) : '';
 $direccion = isset($_POST['direccion']) ? Filtro($_POST['direccion']) : '';
+$correo = isset($_POST['correo']) ? Filtro($_POST['correo']) : '';
+$comuna = isset($_POST['comuna']) ? Filtro($_POST['comuna']) : '';
 $sexo = isset($_POST['sexo']) ? Filtro($_POST['sexo']) : '';
 $error = '';
 ?>
